@@ -197,6 +197,7 @@ resource appServiceWeb 'Microsoft.Web/sites@2022-09-01' = {
   location: location
   properties: {
     minTlsVersion: '1.2'
+    minTlsVersion: '1.2'
     serverFarmId: appServicePlan.id
     httpsOnly: true
   }
