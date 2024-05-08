@@ -175,6 +175,10 @@ resource appServiceWeb 'Microsoft.Web/sites@2022-09-01' = {
   properties: {
     serverFarmId: appServicePlan.id
     httpsOnly: true
+    siteConfig: {
+      minTlsVersion: '1.2'
+      ftpsState: 'FtpsOnly'
+    }
   }
 }
 
